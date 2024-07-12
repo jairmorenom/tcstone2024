@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adamanta Training Camp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e37e36; /* Tono morado fuerte */
+            color: #333; /* Color de texto gris oscuro */
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('ada.jpeg') no-repeat center center/cover;
+            background-position: center 25%; /* Ajusta la posición del fondo */
+            background-size: 100%; /* Ajusta el tamaño de la imagen */
+            opacity: 0.3; /* Ajusta la opacidad según sea necesario */
+            z-index: 0;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 10px;
+        }
+        .showcase {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            flex-wrap: wrap;
+            background-size: cover;
+            color: #000;
+        }
+        .showcase img {
+            max-width: 100%;
+            margin: auto;
+            display: none;
+        }
+        .showcase .content {
+            max-width: 100%;
+            margin: auto;
+        }
+        .showcase h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .showcase p {
+            font-size: 1.2rem;
+            color: #000;
+        }
+        .content {
+            padding: 20px;
+            background: #f4f4f4;
+            color: #333;
+            text-align: justify;
+        }
+        .content h2, .content h3 {
+            text-align: center;
+        }
+        .content p, .content ul {
+            padding: 10px;
+            line-height: 1.6;
+        }
+        .highlight-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+        }
+        .highlight-box ul {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: left;
+            margin-top: 10px;
+        }
+        footer {
+            background: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .custom-bullets {
+            list-style-type: none;
+            padding-left: 0;
+            text-align: center;
+        }
+        .custom-bullets li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .custom-bullets li:before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #333;
+        }
+        .contact-box {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-box ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        .contact-box ul li {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 80%;
+            }
+            .showcase {
+                flex-wrap: nowrap;
+            }
+            .showcase .content {
+                max-width: 60%;
+            }
+            header ul {
+                float: right;
+            }
+            header li {
+                padding: 0 20px;
+            }
+            .showcase h1 {
+                font-size: 3rem;
+            }
+            .showcase p {
+                font-size: 1.5rem;
+            }
+            .showcase img {
+                display: inline-block;
+            }
+            .contact-box {
+                width: 50%;
+                margin: auto;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ <header>
+    <div class="header-content">
+        <h1 style="font-weight: bold; font-size: 25px; color: black;">HIGH PERFORMANCE TRAINING CAMP</h1> 
+        <h2 style="font-weight: bold; font-size: 15px; color: black;text-decoration: underline;">"By Jair Moreno"</h2>
+        <h3 style="font-weight: bold; font-size: 15px; color: black; text-decoration: underline;">"Fecha: Agosto"</3>
+        
+    </div>
+</header>
+
+
+      
+        
+
+
+
+        
+        
+<style>
+    .nav-container {
+        background-color: rgba(211, 211, 211, 0.5); /* lightgray con 50% de opacidad */
+        padding: 10px; /* Espacio interno dentro de la caja */
+        border: 1px solid gray; /* Borde de la caja */
+        white-space: nowrap; /* Evita que haya saltos de línea */
+        overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
+    }
+
+    .nav-container ul {
+        list-style-type: none; /* Quitar los puntos de la lista */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-container li {
+        display: inline-block; /* Para que los elementos estén en línea */
+        margin-right: 0px; /* Margen entre elementos */
+    }
+
+    .nav-container a {
+        color: black; /* Color del texto */
+        text-decoration: none; /* Quitar subrayado de los enlaces */
+        font-size: 10px; /* Tamaño de la fuente */
+        padding: 3px 8px; /* Espacio interno del enlace */
+    }
+</style>
+
+<div class="nav-container">
+    <ul>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#requisitos">Requisitos</a></li>
+        <li><a href="#cronograma">Cronograma</a></li>
+        <li><a href="#proposito">Propósito</a></li>
+        <li><a href="#registro">Registro</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+    </div>
+
+
+
+
+
+
+
+
+        
+        
+    </header>
+    <section class="showcase">
+        <div class="content">
+            <p style="text-align: center;"><strong>¡Únete al Training Camp!</strong></p>
+            <div class="highlight-box">
+                <p style="text-align: center; color: PeachPuff; text-decoration: underline;">
+                    Lugar: STONE ADVENTURE MRL<br>                    
+                    Costo: $1,800 MXN<BR>
+                </p>
+            </DIV>
+                <div class="highlight-box">     
+                <p><a href="https://forms.gle/6fGFNq3so37cJAHK6">Regístro</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="objetivo">
+        <div class="container">
+            <h2>Objetivo</h2>
+            <div class="highlight-box">
+            <p style="text-align: justify; font-size: 15px;">
+                Trabajaremos para motivar a las y los atletas, para potenciar y maximizar sus habilidades fisicas y mentales.<br><br>
+                Con el objetivo de prepararlos para sus futuras competencias, proyectos personales y sobretodo aportar valor a su desarrollo.<br><br>
+                Estamos preparados para equiparte con las herramientas esenciales para competir al más alto nivel y construir las bases de un atleta de alto rendimiento.
+</p>
+
+             </div>
+            <p style="color: black; font-weight: bold; text-align: center; font-size: 20px">Fortaleceras tu:</p>
+            <div class="highlight-box" style="text-align: center;">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li style="text-align: left;"><strong>✓ Movimiento</strong></li>
+                    <li style="text-align: left;"><strong>✓ Preparación mental</strong></li>
+                    <li style="text-align: left;"><strong>✓ Técnica / Táctica (B) </strong></li>
+                    <li style="text-align: left;"><strong>✓ Lectura / Visualización (B)</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="valores">
+        <div class="container">
+            <h2>Valores</h2>
+            <div class="highlight-box">
+                <ul>
+                    <li>⭐ Disciplina y Perseverancia</li>
+                    <li>⭐ Desarrollo de Habilidades</li>
+                    <li>⭐ Superación Personal</li>
+                    <li>⭐ Trabajo en Equipo</li>                   
+                    <li>⭐ Confianza</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="requisitos">
+        <div class="container">
+            <h2>Requisitos</h2>
+            <div class="highlight-box">
+                <ul class="custom-bullets">
+                    <li>Activamente compitiendo.</li><br>
+                    <li>Interesado en competir.</li><br>  
+                    <li>V6+</li><br>                      
+                    <li><strong>Nota:</strong> <a href="https://docs.google.com/spreadsheets/d/121tmjgRgRckks1PX-ijIA7wgDJQ6K93vA_pI4mbBSNM/edit?gid=0#gid=0" style="font-size: 15px;">Competencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="cronograma">
+        <div class="container">
+            
+        
+<div class="highlight-box" style="background-color: sandybrown; padding: 5px; margin-bottom: 5px;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><h3 style="margin-top: 0;">Día 1: Viernes</h3></li>
+        <li><p style="font-size: 10px; text-align: center; color: black ; margin-bottom: 5px;"><strong>4 horas</strong></p></li>
+    </ul>
+</div>
+
+
+                           <div style="padding: 5px; text-align: center;">
+                   <p style="font-size: 20px; margin-top: 0; text-decoration: underline;">
+    <span>📍</span> StoneAdventure / Morelia 
+</p>
+
+                    
+                    <p><strong>Actividades:</strong></p>
+                    <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> "Entre Sueños y Realidades"</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Dinámicas de integración</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Establecer intenciones</li>
+                    </ul>
+                </div>
+
+
+                
+<div class="highlight-box" style="background-color: sandybrown; padding: 5px; margin-bottom: 5px;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><h3 style="margin-top: 0;">Día 2: Sabado</h3></li>
+        <li><p style="font-size: 10px; text-align: center; color: black; margin-bottom: 5px;"><strong>4 horas</strong></p></li>
+    </ul>
+</div>
+
+                                     <div style="padding: 5px; text-align: center;">
+                   <p style="font-size: 20px; margin-top: 0; text-decoration: underline;">
+    <span>📍</span> StoneAdventure / Morelia 
+</p>
+
+                       
+                    <p><strong>Actividades:</strong></p>
+                    <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> 100 variables, ¿Qué es lo mejor?</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Técnico-Tácticas</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Escalador analítico vs intuitivo</li>
+                    
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Herramientas Psicológicas</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Biblioteca de movimientos</li>
+                        
+                        
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Estrategias 4x4 & Jam</li>
+                        
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> JAM (1h)</li>
+                    </ul>
+                </div>
+                    
+                <div class="highlight-box" style="background-color: sandybrown; padding: 5px; margin-bottom: 5px;">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><h3 style="margin-top: 0;">Día 3: Domingo</h3></li>
+        <li><p style="font-size: 10px; text-align: center; color: black; margin-bottom: 5px;"><strong>4 horas</strong></p></li>
+    </ul>
+</div>
+
+
+                    
+                 <div style="padding: 5px; text-align: center;">
+                   <p style="font-size: 20px; margin-top: 0; text-decoration: underline;">
+    <span>📍</span> StoneAdventure / Morelia 
+</p>
+
+                    <p><strong>Actividades:</strong></p>
+                    <ul style="list-style-type: none; padding-left: 0; margin-top: 0;">
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> "Una competencia no te define"</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Identificar áreas de mejora</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Establecer metas a plazos</li>
+                        <li style="margin-bottom: 5px;"><span style="color: green;">✓</span> Diálogo interno</li>                     
+                        <li style="margin-bottom: 5px;"><span style="color: red;"><strong>✓</strong></span> <strong>Simulación de competencia IFSC (B:4X4)</strong></li>
+                        <li style="margin-bottom: 5px;"><span></span> *Intención de los armadores</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Recibir feedback</li>
+                        <li style="margin-bottom: 5px;"><span></span> *Probar / Ajustar</li>
+                       
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+    <section class="content" id="proposito">
+        <div class="container">
+            <h2>Propósito</h2>
+            <div class="highlight-box">
+                <p style="text-align: justify;font-size: 14px;">
+                    El deporte de la escalada es joven, está creciendo y evolucionando. Me apasiona asumir un papel activo en el futuro de la escalada, no solo como actividad recreativa, sino también como deporte y estilo de vida.<br><br>
+                    Creo sinceramente que todas las personas tienen habilidades especiales ocultas que deben ser desarrolladas.<br><br>
+                    El trabajo colaborativo atletas-armadores cada vez juega un papel crucial en el desarrollo mutuo.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="registro">
+        <div class="container">
+            <h2>Formulario de registro</h2>
+              <div class="highlight-box">
+            <p><a href="https://forms.gle/6fGFNq3so37cJAHK6"><H3>Registro</H3></a></p>
+        </div>
+    </section>
+    <section class="content" id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-box">
+               <ul style="text-align: center; list-style-type: none; padding: 0;">
+    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/jairmorenom?igsh=ODBrNGQ1OHVsNGd3&utm_source=qr">jairmorenom</a></li>
+    <li><strong>Teléfono:</strong> <a href="tel:+524434486529">4434486529</a></li>
+    <li><strong>Email:</strong> <a href="mailto:jairmoreno9876@gmail.com" style="font-size: 14px;">jairmoreno9876@gmail.com</a></li>
+</ul>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Jair Moreno &copy; 2024</p>
+    </footer>
+</body>
+</html>
